@@ -1,18 +1,20 @@
 # NgGithubProfileSearcher
+Angular 4 SPA which utilizes the Github API to allow a user to search for github profiles and get information about the profile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+## Project Details
 
-## Development server
+A SPA built using Angular 4 which allows a user to search for another user via their username and get details about their github profile such as repositories via the Github API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+* Download or clone the repository
 
-## Build
+* Run `npm install` to install the necessary dependancies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will          automatically reload if you change any of the source files.
+
+* Run `ng build` to build the project. The build artifacts will be stored in the `dist/`       directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
@@ -23,6 +25,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+## License
+MIT
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Create Components
+
+* Integrate Github API
+
