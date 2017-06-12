@@ -28,6 +28,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## License
 MIT
 
+## TODO
 * Create Components
 
 * Integrate Github API
