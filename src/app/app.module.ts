@@ -5,13 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/Profile/profile.component';
+import { SearchComponent } from './components/Search/search.component';
 
 import { GithubService } from './services/github/github.service';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
