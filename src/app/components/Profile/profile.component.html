@@ -43,4 +43,27 @@
       </div>
     </div>
   </div>
+
+
+  <div class="ui raised segment">
+    <h3 class="ui inverted centered block header">Repositories</h3>
+    <div class="ui relaxed divided list" *ngFor="let repo of repos">
+      <div class="item">
+        <div class="right floated content">
+          <div>
+            <span class="ui label"><i class="find icon"></i>{{repo.watchers_count}}</span>
+            <span class="ui label"><i class="star icon"></i>{{repo.stargazers_count}}</span>
+          </div>
+        </div>
+        <div class="content">
+          <a href="{{repo.html_url}}" class="header">{{repo.name}}</a>
+          <p>{{repo.description}}</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <h3 class="ui inverted centered block header">
+      <a href="https://github.com/{{user.login}}?tab=repositories" >View More Repositories</a>
+    </h3>
+  </div>
 </div>
