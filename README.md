@@ -8,7 +8,7 @@ A SPA built using Angular 4 which allows a user to search for another user on Gi
 
 ## Getting Started
 
-* Download or clone the repository
+* Download or clone the repository `https://github.com/Pierre-D-G/Ng-Github-Profile-Searcher.git`
 
 * Run `npm install` to install the necessary dependancies
 
