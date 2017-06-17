@@ -3,7 +3,7 @@ Angular 4 SPA which utilizes the Github API to allow a user to search for github
 
 ## Project Details
 
-A SPA built using Angular 4 which allows a user to search for another user via their username and get details about their github profile such as repositories via the Github API.
+A SPA built using Angular 4 which allows a user to search for another user on Github via their username and get details about their github profile such as repositories via the Github API.
 
 
 ## Getting Started
@@ -28,9 +28,14 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## License
 MIT
 
-## TODO
+## TODO - All Completed
 
-* Create Components
+* Create Components *completed
+ - Create page to display user and user's repository data from API *completed
+ - Add area on page to search for users *completed
 
-* Integrate Github API
+* Integrate Github API *completed
+  - Create service to fetch user data *completed
+  - Create service to fetch user repositories *completed
+  - Limit requests to API requests by sending requests only when a user has stopped typing for a         certain peroid of time and only when the new request is diffrent from the previous request           *completed
 
