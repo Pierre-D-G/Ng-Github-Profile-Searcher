@@ -31,11 +31,12 @@ MIT
 ## TODO - All Completed
 
 * Create Components *completed
+
  - Create page to display user and user's repository data from API *completed
  - Add area on page to search for users *completed
 
 * Integrate Github API *completed
   - Create service to fetch user data *completed
   - Create service to fetch user repositories *completed
-  - Limit requests to API requests by sending requests only when a user has stopped typing for a         certain peroid of time and only when the new request is diffrent from the previous request           *completed
+  - Limit requests to API  by sending requests only when a user has stopped typing for a                 certain peroid of time and only when the new request is diffrent from the previous request           *completed
 
