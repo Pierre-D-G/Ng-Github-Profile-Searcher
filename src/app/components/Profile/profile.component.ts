@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../../services/github/github.service';
-import 'rxjs/add/operator/map';
+import { FormControl } from '@angular/forms';
 
 @Component({
   moduleId: module.id,
@@ -8,16 +8,22 @@ import 'rxjs/add/operator/map';
   templateUrl: './profile.component.html',
   providers: [GithubService]
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
   user: any;
   repos: any;
-  constructor(private _githubService: GithubService) {
-    this._githubService.getUser().subscribe(user => {
-      this.user = user
-    })
-    this._githubService.getRepos().subscribe(repos => {
-      console.log(repos);
-      this.repos = repos
-    })
+  username: FormControl = new FormControl();
+  constructor(private _githubService: GithubService) { }
+
+  ngOnInit() {
+    this.username.valueChanges
+      .debounceTime(400)
+      .distinctUntilChanged()
+      .subscribe(username => this._githubService.getUser(username)
+        .subscribe(user => {
+          this.user = user
+          this._githubService.getRepos(username).subscribe(repos => {
+          this.repos = repos
+        })}
+      ))
   }
 }

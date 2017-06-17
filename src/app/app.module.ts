@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './components/Profile/profile.component';
-import { SearchComponent } from './components/Search/search.component';
 
 import { GithubService } from './services/github/github.service';
 
@@ -15,11 +16,12 @@ import { GithubService } from './services/github/github.service';
   declarations: [
     AppComponent,
     ProfileComponent,
-    SearchComponent,
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]

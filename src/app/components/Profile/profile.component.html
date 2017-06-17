@@ -1,3 +1,10 @@
+<h3 class="ui inverted centered block header">Need to find someone on Github?</h3>
+  <div class="ui icon fluid input">
+    <input class="prompt" type="text" [formControl]="username" placeholder="Enter a Github Username...">
+    <i class="search icon"></i>
+  </div>
+  <div class="ui divider"></div>
+
 <div *ngIf="user">
   <div class="ui raised segment">
     <h3 class="ui inverted centered block header">{{user.name}}</h3>
@@ -56,7 +63,7 @@
           </div>
         </div>
         <div class="content">
-          <a href="{{repo.html_url}}" class="header">{{repo.name}}</a>
+          <a href="{{repo.html_url}}" target="_blank" class="header">{{repo.name}}</a>
           <p>{{repo.description}}</p>
         </div>
       </div>
